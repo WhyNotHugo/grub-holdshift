@@ -34,13 +34,13 @@ make_timeout () {
   if [ "x${GRUB_FORCE_HIDDEN_MENU}" = "xtrue" ] ; then
     if [ "x${1}" != "x" ] ; then
       if [ "x${GRUB_HIDDEN_TIMEOUT_QUIET}" = "xtrue" ] ; then
-    verbose=
+        verbose=
       else
-    verbose=" --verbose"
+        verbose=" --verbose"
       fi
 
       if [ "x${1}" = "x0" ] ; then
-    cat <<EOF
+        cat <<EOF
 if [ "x\${timeout}" != "x-1" ]; then
   if keystatus; then
     if keystatus --shift; then
@@ -56,7 +56,7 @@ if [ "x\${timeout}" != "x-1" ]; then
 fi
 EOF
       else
-    cat << EOF
+        cat <<EOF
 if [ "x\${timeout}" != "x-1" ]; then
   if sleep$verbose --interruptible ${GRUB_HIDDEN_TIMEOUT} ; then
     set timeout=0

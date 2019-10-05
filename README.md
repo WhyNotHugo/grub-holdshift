@@ -18,7 +18,7 @@ For the master branch, that's all that needs to be done.
 
 For the branch ```optional```, you'll need to add
 ```GRUB_FORCE_HIDDEN_MENU="true"``` to ```/etc/default/grub``` and re-run
-grub-mkconfig (generally, ```grub-mkconfig -o /boot/grub/grub.cfg```, though
+grub-mkconfig (generally, ```grub-mkconfig -o /boot/grub/grub.cfg``` or ```sudo update-grub```, though
 this may vary depending on your distribution. Consult your distributions
 manual if in doubt).
 

@@ -3,7 +3,7 @@ Grub-holdshift
 About
 -----
 
-Simple GRUB script to make grub skip it's menu if you aren't holding
+Simple GRUB script to make grub skip its menu if you aren't holding
 shift.
 
 The script is mostly made up of bit canibalized from Ubuntu's os_prober
